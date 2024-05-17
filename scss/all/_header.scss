@@ -76,9 +76,9 @@ header {
                     color: #5624D0;
                 }
 
-                &:nth-child(2):hover{
-                    display: block !important;
-                }
+                // &:nth-child(2):hover .category_section {
+                //     // display: block;
+                // }
             }
 
             .bi-cart3 {
@@ -122,28 +122,66 @@ header {
     }
 }
 
-.category_section {
-    display: none;
-    position: relative;
-    left: 120px;
-    top: 6px;
-    width: 270px;
-    height: 600px;
-    border: 1px solid gray;
-    background: rgb(63, 22, 22);
+.category {
+    display: flex;
+    // display: none;
 
-    &-items {
-        justify-content: space-between;
-        align-items: center;
-        display: flex;
-        font-family: "Open Sans", sans-serif;
-        font-size: 15px;
-        color: white;
-        cursor: pointer;
-        padding: 15px 15px 10px 15px;
+    &_section {
+        position: relative;
+        left: 120px;
+        top: 6px;
+        width: 270px;
+        height: 580px;
+        border: 1px solid gray;
+        background: rgb(63, 22, 22);
 
-        &:hover{
-            color: #5624D0;
+        &-items {
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+            font-family: "Open Sans", sans-serif;
+            font-size: 15px;
+            color: white;
+            cursor: pointer;
+            padding: 15px 15px 10px 15px;
+
+            a {
+                font-family: "Open Sans", sans-serif;
+                font-size: 15px;
+                color: white;
+                text-decoration: none;
+            }
+            
+            &:hover {
+                color: #5624D0;
+            }
+        }
+    }
+
+    &_section-two {
+        position: relative;
+        left: 120px;
+        top: 6px;
+        width: 250px;
+        height: 580px;
+        border: 1px solid gray;
+        background: rgb(115, 53, 53);
+    }
+
+    &_section-three {
+        position: relative;
+        left: 120px;
+        top: 6px;
+        width: 260px;
+        height: 580px;
+        border: 1px solid gray;
+        background: rgb(166, 62, 62);
+
+        h3 {
+            color: #6A6F73;
+            font-family: "Open Sans", sans-serif;
+            padding: 15px 15px 0px 15px;
+            font-size: 16px;
         }
     }
 }
